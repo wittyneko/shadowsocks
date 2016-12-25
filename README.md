@@ -53,6 +53,50 @@ To monitor the log:
 
     ./tail.sh
 
+#### Update PAC Config
+
+edit`shadowsocks/genpac/config/user-rules.txt`
+```
+vi shadowsocks/genpac/config/user-rules.txt
+//or
+gedit shadowsocks/genpac/config/user-rules.txt
+
+```
+
+make pac file
+```
+cd shadowsocks/genpac
+sudo mkdir /etc/pac
+//get gfwlist and user-rules
+sudo python genpac.py -c config/config.ini
+//single user-rules 
+sudo python genpac.py -c config/config.ini --gfwlist-disabled
+
+```
+
+more: [https://github.com/JinnLynn/genpac](https://github.com/JinnLynn/genpac)
+
+
+#### AutoProxy
+All Seting-> Network -> System Proxy -> Auto
+
+set as
+
+```
+/etc/pac/autoproxy.pac
+
+```
+or
+
+```
+file:///etc/pac/autoproxy.pac
+
+```
+
+### Thanks
+
+JinnLynn [genpac](https://github.com/JinnLynn/genpac)
+
 
 Client
 ------
