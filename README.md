@@ -53,7 +53,7 @@ To monitor the log:
 
     ./tail.sh
 
-#### Update PAC Config
+### Update PAC Config
 
 edit`shadowsocks/genpac/config/user-rules.txt`
 ```
@@ -77,7 +77,7 @@ sudo python genpac.py -c config/config.ini --gfwlist-disabled
 more: [https://github.com/JinnLynn/genpac](https://github.com/JinnLynn/genpac)
 
 
-#### AutoProxy
+### AutoProxy
 All Seting-> Network -> System Proxy -> Auto
 
 set as
